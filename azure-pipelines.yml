@@ -7,6 +7,9 @@ trigger:
 - master
 
 pool:
+  name: Default
+  demands:
+     - agent.name -equals LAPTOP-1BEH2R1R 
   vmImage: ubuntu-latest
 
 steps:
